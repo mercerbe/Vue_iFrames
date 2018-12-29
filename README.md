@@ -1,29 +1,8 @@
-# vue-iframes
+### Example of Customizable VueJs Component
+##### Repository for the [article]() / [video](https://youtu.be/KIeUQNc4-qI)
 
-## Project setup
-```
-npm install
-```
+The idea is to load a VueJS component into an iFrame, allowing to pass parameters to the URL which will then customize the component itself.
+git 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![widget wizard](https://raw.githubusercontent.com/mstrlaw/custom-widget/master/public/custom_widget_2.gif)

@@ -1,28 +1,28 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import App from "./App.vue";
-//components 
-import CustomWidget from './components/CustomWidget.vue'
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import CustomComponent from './components/CustomComponent.vue'
 
-//implement router
-Vue.use(VueRouter);
+import App from './App.vue'
 
-//establish routes
-const routes = {
-	name: "home",
-	path: "/",
-	component: CustomWidget,
-	props: true,
-};
+Vue.use(VueRouter)
 
-Vue.config.productionTip = false;
+const routes = [
+  {
+    name: 'home',
+    path: '/',
+    component: CustomComponent,
+    props: true
+  }
+]
+
+Vue.config.productionTip = false
 
 const router = new VueRouter({
-	mode: "history",
-	routes: routes,
-});
+  mode: 'history',
+  routes: routes
+})
 
 new Vue({
-	router,
-	render: h => h(App),
-}).$mount("#app");
+  router,
+  render: h => h(App)
+}).$mount('#app')

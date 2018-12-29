@@ -15,9 +15,10 @@
     <input v-model="name" type="text" placeholder="Name" class="input" @blur="showValue">
   </div>
 </template>
+
 <script>
 export default {
-  name: "CustomWidget",
+  name: "CustomComponent",
   data() {
     return {
       name: "",
@@ -37,6 +38,7 @@ export default {
   }
 };
 </script>
+
 <style>
 .input {
   width: 100%;
